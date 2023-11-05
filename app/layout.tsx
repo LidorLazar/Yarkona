@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Providers from "@/components/providers";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <header>
-        <Navbar/>
+          <Providers>
+              <Navbar/>
+          </Providers>
       </header>
       {children}
       <footer className={'fixed bottom-0 w-full'}>

@@ -8,6 +8,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {ImCross} from 'react-icons/im';
 import {navLink} from './index'
 import {NavbarMobile} from "@/components/navbarMobile";
+import GoogleButton from "@/components/googleButtonAuth";
 
 
 
@@ -32,7 +33,7 @@ export default function Navbar() {
                 </div>
 
                 <div className={'w-1/3 h-full flex items-center justify-center'}>
-
+                    <GoogleButton/>
                 </div>
 
                 <article className={'w-1/3 h-full md:block hidden'}>
