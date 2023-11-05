@@ -8,13 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      height: {
+        'fullScreen': 'calc(100vh - 208px)'
+      },
+      backdropBlur: {
+        "glassBlur": 'blur(8.4px)'
+      },
+      boxShadow: {
+        'navShadow': '0 20px 45px 0 rgba(0,0,0,  0.2)',
+        'glassShadow': '0 4px 30px 0 rgba(0, 0, 0, 0.1)',
+      },
+      colors: {
+        'glass': 'rgba(255, 255, 255, 0.14)',
       },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
 export default config
