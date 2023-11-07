@@ -59,7 +59,7 @@ export default function Timer() {
                     {days} ימים {hours} שעות {minutes} דקות {seconds} שניות
                 </p>
             </article>
-            <div className={'flex justify-center w-full h-1/3'}>
+            <div className={'flex justify-center w-full h-1/3 text-white text-2xl'}>
                 <button disabled={!checkTime()} className={"bg-blue-500 rounded-xl w-1/2 h-full"}>
                     {' '}
                     מגיע{' '}
